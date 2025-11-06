@@ -9,4 +9,13 @@ int main(){
 
   G.print();
 
+
+  cout << "El num de edges es: " << G.numEdges() << endl;
+
+  cout << "El degree es: " << G.inDegree(9) << endl;
+
+  cout << "Es influencer: " << G.isInfluencer(9) << endl;
+
+  
+
 }

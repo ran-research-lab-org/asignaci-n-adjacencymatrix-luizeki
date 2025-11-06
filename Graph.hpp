@@ -53,19 +53,22 @@ public:
             if(adjMatrix[i][u] == 1) {degrees++;}
         }
         return degrees;
+        }
+        
     }
 
     // Completa esta función
     // Devuelve cierto si u es el nodo con mayor inDegree.
     // En caso de que haya varios nodos que tengan el mayor inDegree,
     // devuelve true si u es uno de ellos
-    bool isInfluencer(int u) const  {
+    bool isInfluencer(int u) const {
         for(int i = 0; i < numVertices; i++){
-            if(inDegree(i) > inDegree(u){
+            if(inDegree(i) > inDegree(u)){
                 return false;
             }
-            return true;
         }
+        return true;
     }
 };
+
 
